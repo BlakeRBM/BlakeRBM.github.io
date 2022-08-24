@@ -15,6 +15,6 @@
         </form>
     </body>
     <script>
-        document.getElementById("stationinput").value = URLSearchParams(window.location.search).get("code");
+        document.getElementById("stationinput").value = (new URLSearchParams(window.location.search)).get("code");
     </script>
 </html>
